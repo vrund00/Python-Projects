@@ -1,0 +1,23 @@
+import random
+
+userChoice = int(input("scissor (0), rock (1), paper (2): "))
+compChoice = random.randint(0, 3)
+
+if int(userChoice == 0) and int(compChoice == 2):
+    print("The computer is paper. You are scissor. You won.")
+elif int(userChoice == 0) and int(compChoice == 1):
+    print("The computer is rock. You are scissor. Computer won. ")
+elif int(userChoice == 1) and int(compChoice == 0):
+    print("The computer is  scissor. You are rock. You won.")
+elif int(userChoice == 1) and int(compChoice == 2):
+    print("The computer is paper. You are rock. Computer won.")
+elif int(userChoice == 2) and int(compChoice == 0):
+    print("The computer is scissor. You are paper. Computer won.")
+elif int(userChoice == 2) and int(compChoice == 1):
+    print("The computer is rock. You are paper. You won.")
+elif int(userChoice == 0 and compChoice == 0):
+    print("The computer is scissor. You are scissor too. It is a draw.")
+elif int(userChoice == 1 and compChoice == 1):
+    print("The computer is rock. You are rock too. It is a draw.")
+elif int(userChoice == 2 and compChoice == 2):
+    print("The computer is paper. You are paper too. It is a draw.")
