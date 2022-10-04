@@ -1,0 +1,20 @@
+class findSubstring:
+    def __init__(self, str1, str2):
+        self.str1 = str1
+        self.str2 = str2
+    def search(self):
+        n = self.str1 in self.str2
+        if n:
+            return True
+        else:
+            return False
+
+n1 = str(input("Enter the first string: "))
+n2 = str(input("Enter the second string: "))
+
+m1 = findSubstring(n1, n2)
+
+if m1.search() == True:
+    print("The first string is a substring of the first")
+elif m1.search() == False:
+    print("The first string is not a substring of the second")
