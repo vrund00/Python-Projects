@@ -1,0 +1,22 @@
+weight = int(input("Enter weight in pounds: "))
+feet = int(input("Enter feet: "))
+inches = int(input("Enter inches: "))
+
+KILOGRAMS_PER_POUND = 0.45359237
+METERS_PER_INCH = 0.0254
+
+totalInches = (feet * 12) + inches
+weightToKilo = weight * KILOGRAMS_PER_POUND
+height = totalInches * METERS_PER_INCH
+bmi = weightToKilo / (height ** 2)
+
+print("BMI is", bmi)
+
+if bmi < 18.5:
+    print("You are underweight")
+elif 18.5 < bmi < 25:
+    print("You are normal")
+elif 25 < bmi < 30:
+    print("You are overweight")
+else:
+    print("You are obese")
