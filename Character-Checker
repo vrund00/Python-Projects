@@ -1,0 +1,18 @@
+userInput = str(input("Enter a string: "))
+
+count = 0
+lowerCount = 0
+numCount = 0
+for i in userInput:
+    i = i.isupper()
+    if i:
+        count += 1
+for i in userInput:
+    i = i.islower()
+    if i:
+        lowerCount += 1
+for i in userInput:
+    i = i.isnumeric()
+    if i:
+        numCount += 1
+print("Your string has", count, "upper case letters", "\n", lowerCount, "lower case letters", "\n", numCount, "numbers")
